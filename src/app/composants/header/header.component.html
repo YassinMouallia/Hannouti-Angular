@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-md-8">
+    <div class="input-group flex-nowrap">
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="addon-wrapping"><i class="fas fa-search"></i></span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="row">
+      <div class="col-md-9 text-black-3 text-right">
+        <b><span>Bonjour {{connectedUser.nom}}&nbsp;</span></b>
+      </div>
+
+      <div class="col-md-3">
+        <a href="javascript:void(0);" [routerLink]="['/profil']">
+          <img src="assets/user.png" class="rounded-circle" width="50px" height="50px" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
