@@ -14,13 +14,13 @@
       <div class="card" *ngFor="let article of listarticle">
         <div class="card-body" id="headingOne">
           <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            <app-detail-mvt-stk-article [articleDto]="article" ></app-detail-mvt-stk-article>
+            <app-detail-mvt-stk-article [articleDto]="article"></app-detail-mvt-stk-article>
           </button>
         </div>
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#mvtStkDetails" style="max-height: 300px;
         overflow-y: scroll">
-          <div class="card-body">
-            <app-detail-mvt-stk></app-detail-mvt-stk>
+          <div class="card-body" >
+            <app-detail-mvt-stk [articleid]="article.id!"></app-detail-mvt-stk>
           </div>
         </div>
       </div>
