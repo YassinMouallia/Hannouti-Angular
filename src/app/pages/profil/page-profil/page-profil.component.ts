@@ -37,9 +37,11 @@ export class PageProfilComponent implements OnInit {
     this.router.navigate(['changermotdepasse']);
   }
 
-  modifierProfile():void{
-    
-    this.router.navigate(['modifierprofil']);
+  Logout():void{
+
+    localStorage.removeItem('accessToken');
+    localStorage.removeItem('connectedUser');
+    this.router.navigate(['login']);
   }
   
 }
